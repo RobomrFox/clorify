@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "clorify", 
+    "version": "1.0", 
+    "description": "Changes background color of the current page", 
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    }, 
+
+    "permissions": ["activeTabe", "scripting", "tabs"], 
+
+    "host_permission": ["<all_urls>"], 
+
+    "background": {
+        "service_worker": "background.js"
+    }
+}
